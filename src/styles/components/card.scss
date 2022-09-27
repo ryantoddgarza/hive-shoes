@@ -1,0 +1,36 @@
+@use "../tokens" as *;
+@use "../functions" as *;
+@use "../mixins" as *;
+
+.card-grid {
+  grid-gap: units(4);
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: $breakpoint-phone-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint-tablet-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  padding: units(4);
+  @include box-shadow;
+}
+
+.card .header {
+  padding-bottom: units(2);
+}
+
+.card .body {
+  @include p;
+}
+
+.card .heading {
+  @include h2;
+}

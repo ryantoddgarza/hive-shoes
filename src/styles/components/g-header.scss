@@ -1,0 +1,19 @@
+@use "../tokens" as *;
+@use "../functions" as *;
+@use "../mixins" as *;
+
+.g-header {
+  @include box-shadow;
+}
+
+.g-header .inner {
+  display: flex;
+  align-items: center;
+  height: units($g-header-height);
+}
+
+.g-header .site-name {
+  font-size: $font-size-md;
+  font-weight: bold;
+  text-transform: uppercase;
+}

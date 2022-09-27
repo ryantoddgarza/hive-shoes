@@ -1,0 +1,41 @@
+@use "../tokens" as *;
+@use "../functions" as *;
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: units(2);
+  padding-right: units(2);
+}
+
+.container.site {
+  max-width: $breakpoint-widescreen;
+}
+
+.container.phone {
+  max-width: $breakpoint-phone;
+}
+
+.container.phone-lg {
+  max-width: $breakpoint-phone-lg;
+}
+
+.container.tablet {
+  max-width: $breakpoint-tablet;
+}
+
+.container.tablet-lg {
+  max-width: $breakpoint-tablet-lg;
+}
+
+.container.desktop {
+  max-width: $breakpoint-desktop;
+}
+
+.container.desktop-lg {
+  max-width: $breakpoint-desktop-lg;
+}
+
+.container.widescreen {
+  max-width: $breakpoint-widescreen;
+}

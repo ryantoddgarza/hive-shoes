@@ -1,0 +1,6 @@
+@use "../tokens" as *;
+
+@mixin box-shadow {
+  box-shadow: -7px -7px 20px 0px $gray-warm-1, -4px -4px 5px 0px $gray-warm-1,
+    7px 7px 20px 0px $gray-warm-5, 4px 4px 5px 0px $gray-warm-4;
+}

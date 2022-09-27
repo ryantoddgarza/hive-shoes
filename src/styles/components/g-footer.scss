@@ -1,0 +1,23 @@
+@use "../tokens" as *;
+@use "../functions" as *;
+@use "../mixins" as *;
+
+.g-footer {
+  @include box-shadow;
+}
+
+.g-footer .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: units($g-footer-height);
+}
+
+.g-footer .link {
+  text-decoration: underline;
+}
+
+.g-footer .weak-text {
+  color: $color-text-weak;
+  font-size: $font-size-sm;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "hive-shoes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryantoddgarza/hive-shoes.git"
+  },
+  "author": "Ryan Todd Garza <ryantoddgarza@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/ryantoddgarza/hive-shoes/issues"
+  },
+  "homepage": "https://github.com/ryantoddgarza/hive-shoes#readme",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "npm run prettier:fix; npm run lint:code:fix",
+    "lint": "npm run prettier; npm run lint:code",
+    "lint:code": "eslint --ext .js,.jsx .",
+    "lint:code:fix": "eslint --fix --ext .js,.jsx .",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "serve": "gatsby serve"
+  },
+  "devDependencies": {
+    "@bitpas/eslint-config": "^0.6.1",
+    "eslint": "^8.24.0",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "gatsby": "^4.24.0",
+    "gatsby-plugin-sass": "^5.24.0",
+    "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-transformer-json": "^4.24.0",
+    "gatsby-transformer-remark": "^5.24.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.55.0"
+  }
+}

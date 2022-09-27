@@ -1,0 +1,13 @@
+@use "../mixins" as *;
+
+.h1 {
+  @include h1;
+}
+
+.h2 {
+  @include h2;
+}
+
+.p {
+  @include p;
+}

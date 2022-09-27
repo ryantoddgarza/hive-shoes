@@ -1,0 +1,5 @@
+@use "../tokens" as *;
+
+@function units($value) {
+  @return $value * $spacing-unit-base;
+}

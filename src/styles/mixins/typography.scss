@@ -1,0 +1,16 @@
+@use "../tokens" as *;
+
+@mixin h1 {
+  font-size: $font-size-xl;
+  line-height: 1;
+}
+
+@mixin h2 {
+  font-size: $font-size-lg;
+  line-height: 1;
+}
+
+@mixin p {
+  font-size: $font-size-md;
+  line-height: 1.625;
+}
