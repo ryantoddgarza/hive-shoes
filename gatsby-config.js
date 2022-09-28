@@ -17,5 +17,12 @@ module.exports = {
     'gatsby-transformer-remark',
     'gatsby-transformer-json',
     'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: ['work sans'],
+      },
+      display: 'swap',
+    },
   ],
 };
